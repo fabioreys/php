@@ -1,83 +1,10 @@
 <?php
-$diadasemana = date("w");
-switch ($diadasemana) {
-	
-
-	case 0:
-	echo"domingo";
-	break;
-
-	case 1:
-	echo"segunda";
-	break;
-
-	case 2:
-	echo"terca";
-	break;
-
-	case 3:
-	echo"quarta";
-	break;
-
-	case 4:
-	echo"quinta";
-	break;
-
-	case 5:
-	echo"sexta";
-	break;
-
-	case 6:
-	echo"sabado";
-	break;
-	
-
+echo "<select>";
+for ($i=date("Y");$i>date("Y")-100;$i--){
+	echo "<option value=".$i.">".$i."</option>";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+echo "<select>"
+	
 
 
 

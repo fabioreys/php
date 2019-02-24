@@ -1,5 +1,8 @@
 <?php
 $diadasemana = date("w");
+
+echo "<h1>";
+
 switch($diadasemana){
    
    case 0:
@@ -34,7 +37,7 @@ switch($diadasemana){
 
 
 
-
+echo "</h1>";
 
 
 
