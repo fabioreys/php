@@ -1,0 +1,38 @@
+<?php
+class Pessoa{
+
+	public $nome= "fabio";
+	protected $idade=39;
+	private $senha = 123456;
+
+	public function verDados(){
+
+		echo $this->nome."<br>";
+		echo $this->idade."<br>";
+		echo $this->sennha."<br>";
+	}
+}
+class Programador extends Pessoa{
+	public function verDados(){
+		echo get_class($this)."<br>";
+
+		echo $this->nome."<br>";
+		echo $this->idade."<br>";
+		echo $this->sennha."<br>";
+
+}
+}
+
+$objeto = new Programador();
+
+
+$objeto->verDados();
+
+
+
+
+
+
+
+
+?>
